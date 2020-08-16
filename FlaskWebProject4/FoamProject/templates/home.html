@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+
+
+
+
+
+    <table border="1" , color="black">
+        <thead>
+            <tr>
+                <th>Key</th>
+                <th>Tool Code</th>
+                <th>Tool #</th>
+                <th>C520</th>
+                <th>Last Ice Blasting</th>
+                <th>Last Heat and Wipe</th>
+                <th>Prod Days On Line</th>
+                <th>Enter Ice Blasting</th>
+                <th>Enter Heat & Wipe</th>
+                <th>New Prod Date</th>
+                <th>Remove entry</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            {% for tools in Tools %}
+            <tr>
+                <td>{{tools.id}}</td>
+                <td>{{tools.tool_code}}</td>
+                <td>{{tools.tool_num}}</td>
+                <td>{{tools.c520}}</td>
+                <td>{{tools.last_heat}}</td>
+                <td>{{tools.prod_days}}</td>
+                <td>{{tools.enter_wipe}}</td>
+                <td>{{tools.enter_blasting}}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+</body>
+</html>
